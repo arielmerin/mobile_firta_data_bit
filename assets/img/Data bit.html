@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data bit</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/img/patata.svg" type="image/x-icon">
-</head>
+    
+    
+    
+    
+<link rel="stylesheet" href="./Data bit_files/style.css"><link rel="preconnect" href="https://fonts.gstatic.com/"><link href="./Data bit_files/css2" rel="stylesheet"><link rel="shortcut icon" href="http://127.0.0.1:5500/assets/img/patata.svg" type="image/x-icon"></head>
 <body>
     <header>
-        <img src="./assets/img/main_logo.svg" alt="">
+        <img src="./Data bit_files/main_logo.svg" alt="">
         <div class="header__tile-container">
             <!-- el titulo -->
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="#plans" class="header__button">Conoce Nuestros Planes <span> </span></a>
+            <a href="http://127.0.0.1:5500/index.html#plans" class="header__button">Conoce Nuestros Planes <span> </span></a>
         </div>
     </header>
     <main>
@@ -39,7 +39,7 @@
                     <div class="currency__table-container">
                         <table>
                             <!-- TR hace referencia a la fila -->
-                            <tr>
+                            <tbody><tr>
                                 <td class="table__top-left">Bitcoin</td>
                                 <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
                             </tr>
@@ -55,7 +55,7 @@
                                 <td class="table__bottom-left">Stellar</td>
                                 <td class="table__bottom-right table__right">$4.96 <span class="down"></span></td>
                             </tr>
-                        </table>
+                        </tbody></table>
                     </div>
                     <!-- El boton de actualizado -->
                     <div class="currency__table-date">
@@ -69,7 +69,7 @@
                     <p class="comision__table--title">Comisiones</p>
                     <div class="comision__table-container">
                         <table>
-                            <tr>
+                            <tbody><tr>
                                 <td class="table__top-left">Bitrade</td>
                                 <td class="table__right">$12.96</td>
                             </tr>
@@ -85,7 +85,7 @@
                                 <td class="table__bottom-left">Coinext</td>
                                 <td class="table__bottom-right table__right">$14.96</td>
                             </tr>
-                        </table>
+                        </tbody></table>
                     </div>
                     <div class="comision__table-date">
                         <p>
@@ -149,39 +149,48 @@
                         <button class="plan__card--call-to-action">Escoger este <span></span></button>
                     </div>
                 </article>
-                <article class="plans__container--card">
-                    <p class="premium">Premium</p>
-                    <div class="plan__info-container">
-                        <h3 class="plan__card--title">Pago Anual</h3>
-                        <p class="plan__card--price"><span>$</span> 89</p>
-                        <p class="plan__card--saving">*Ahorras $89 comparado al plan mensual.</p>
-                        <button class="plan__card--call-to-action">Escoger este <span></span></button>
-                    </div>
-                </article>
-                <article class="plans__container--card">
-                    <p class="basic">Basic</p>
-                    <div class="plan__info-container">
-                        <h3 class="plan__card--title">Pago Mensual</h3>
-                        <p class="plan__card--price"><span>$</span> 39</p>
-                        <p class="plan__card--saving">*Cobro recurrente a tu método de pago.</p>
-                        <button class="plan__card--call-to-action">Escoger este <span></span></button>
-                    </div>
-                </article>
             </section>
         </section>
     </main>
     <footer>
-        <section class="left">
-            <ul>
-                <li> <a href="#">Linkedin</a> </li>
-                <li> <a href="#">Crunchbase</a></li>
-                <li> <a href="#">Hackernews</a></li>
-            </ul>
-        </section>
-        <section class="right">
-            <img src="./assets/img/patata.svg" alt="logo de batabit">
-            <p>® Batatabit 20201</p>
-        </section>
+
     </footer>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<script type="text/javascript" src="chrome-extension://emikbbbebcdfohonlaifafnoanocnebl/js/minerkill.js"></script></body></html>
