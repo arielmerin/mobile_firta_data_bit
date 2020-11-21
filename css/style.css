@@ -149,6 +149,13 @@ main{
 
 .main__tables-container{
     margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity ;
+
 }
 
 .main__currency-table{
@@ -157,12 +164,15 @@ main{
     max-width: 500px;
     height: 260px;
     margin: 0 auto;
+    margin-left: 30px;
     font-family: 'Inter', sans-serif;
     color: #B5B0AC;
 }
 
 
 .main__currency-table .currency__table--title{
+    position: relative;
+    scroll-snap-align: center;
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -251,12 +261,14 @@ main{
 }
 
 .main__comision-table{
+    position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: auto;
     margin: 0 auto;
-    margin-top: 70px;
+    padding-right: 30px;
     font-family: 'Inter', sans-serif;
     color: #B5B0AC;
 }
