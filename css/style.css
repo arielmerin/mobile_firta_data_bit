@@ -21,6 +21,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -253,9 +254,9 @@ main{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 560px;
+    height: auto;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 70px;
     font-family: 'Inter', sans-serif;
     color: #B5B0AC;
 }
@@ -312,4 +313,144 @@ color: var(--warm-black);
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
+}
+.main__product-detail{
+    background-color: var(--warm-black);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    position: relative;
+    padding: 20px 10 px;
+    padding-top: 10px;
+}
+
+.product__detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main__product-detail--icon{
+    width: 40px;
+    height: 25px;
+    top: -15px;
+    left: calc(50% - 20px);
+    background-image: url('../assets/img/patata.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.product__detail--title h2{
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem
+}
+
+
+.product__detail--title p{
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: #808080;   
+}
+
+/* El contenedor de todas las clases */
+.product__cards-container{
+    padding-bottom: 20px;
+}
+
+.product__detail--card{
+    /* position: relative; */
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 17px;
+    border-radius: 5px;
+    background-color: #282623;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product__detail--card .product__icon--clock{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 7px;
+    /* position: absolute; */
+    background-image: url('../assets/icon/clock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product__detail--card .product__card--title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white);
+    line-height: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.product__detail--card .product__card--body{
+    font-size: 1.4rem;
+    font-weight: 1.8rem;
+    color: #808080;
+}
+
+.product__detail--card .product__icon--eye{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 7px;
+    /* position: absolute; */
+    background-image: url('../assets/icon/eye.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product__detail--card .product__icon--dollar{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 7px;
+    /* position: absolute; */
+    background-image: url('../assets/icon/clock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product__detail--card .product__icon--check{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 7px;
+    /* position: absolute; */
+    background-image: url('../assets/icon/clock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bitcoin__png--container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../assets/img/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.bitcoin__png--container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 2.6rem;
 }
