@@ -1,0 +1,25 @@
+.plans__container-slider{
+    justify-content: center;
+}
+
+.product__cards-container{
+    display: flex;
+    columns: 2;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .header__button{
+
+}
+
+.main__tables-container{
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
